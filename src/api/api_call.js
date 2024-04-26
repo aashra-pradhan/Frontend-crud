@@ -2,9 +2,9 @@ import axios from "axios";
 
 const apiRequest = async (apiDetails, reqPayload) => {
   const { urlEndpoint, requestMethod } = apiDetails;
-  const baseUrl = "https://aashra-production.up.railway.app/api/posts/";
+  const baseUrl = "https://aashra-production.up.railway.app/api/posts";
   let axiosPayload = {
-    baseUrl: "https://aashra-production.up.railway.app/api/posts/",
+    baseUrl: "https://aashra-production.up.railway.app/api/posts",
     url: `${baseUrl}${urlEndpoint}`,
     method: requestMethod,
     responseType: "json",
